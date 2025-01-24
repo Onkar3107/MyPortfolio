@@ -1,0 +1,42 @@
+# Node modules folder
+node_modules/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+
+# Dependency lock files
+package-lock.json
+yarn.lock
+
+# Optional npm cache directory
+.npm
+
+# Ignore any temporary files or IDE-specific files
+.DS_Store
+Thumbs.db
+
+# macOS system files
+*.DS_Store
+
+# VSCode settings (if you're using it)
+.vscode/
+
+# JetBrains IDE settings (e.g., WebStorm, IntelliJ)
+.idea/
+
+# Temporary files
+*.tmp
+*.swp
+*.swo
+
+# Coverage reports
+coverage/
+
+# Build output
+dist/
+build/

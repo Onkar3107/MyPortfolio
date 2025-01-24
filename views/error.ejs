@@ -1,0 +1,27 @@
+<% layout ('layouts/boilerPlate') %>
+
+<div class="container mt-5">
+    <div class="alert alert-danger text-center">
+        <i class="fas fa-exclamation-triangle fa-3x mb-3"></i>
+        <h4>OOPS!</h4>
+        <p><b><%= err.msg %></b></p>
+        <a href="/" class="btn btn-primary mt-3">Go Back to Home</a>
+    </div>
+</div>
+
+<style>
+    .alert-danger {
+        border: 2px solid #dc3545;
+        border-radius: 10px;
+        padding: 20px;
+    }
+    .alert-danger h4 {
+        font-size: 2rem;
+    }
+    .alert-danger p {
+        font-size: 1.2rem;
+    }
+    .alert-danger i {
+        color: #dc3545;
+    }
+</style>

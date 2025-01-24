@@ -1,0 +1,112 @@
+body {
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  flex: 1;
+}
+
+/* Navbar */
+.navbar {
+  height: 5rem;
+  background-color: #ebebeb !important;
+}
+
+.font-edit {
+  font-family: "Lobster", sans-serif !important;
+}
+
+.fa-compass {
+  color: #fe424d;
+  font-size: 2rem;
+}
+
+.nav-link {
+  color: #222 !important;
+  font-size: 1.5rem;
+}
+
+/* Footer */
+.f-info-links a {
+  text-decoration: none;
+  color: #222 !important;
+  /* font-size: 1rem; */
+}
+
+.f-info-links a:hover {
+  text-decoration: underline;
+}
+
+.f-info-links,
+.f-info-socials,
+.f-info-brand {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.f-info-socials a i {
+  font-size: 1.2rem;
+  margin-right: 1rem;
+  color: #222 !important;
+}
+
+.f-info {
+  text-align: center;
+  height: 8rem;
+  background-color: #ebebeb;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-self: space-evenly;
+}
+
+/* About */
+.project-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); 
+}
+
+.project-card a {
+    text-decoration: none; 
+}
+
+/* Contact */
+.contact {
+  background-color: #f9f9f9;
+}
+
+.contact .card {
+  border-radius: 10px;
+}
+
+.contact .form-control {
+  border-radius: 5px;
+}
+
+.contact .btn {
+  width: 100%;
+  padding: 10px;
+}
+
+.mapouter {
+  position: relative;
+  text-align: right;
+  height: 400px;
+  width: 100%;
+}
+
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 400px;
+  width: 100%;
+}

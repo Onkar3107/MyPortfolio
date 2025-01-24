@@ -1,0 +1,119 @@
+<% layout ('layouts/boilerPlate') %>
+
+<section class="contact py-5">
+  <div class="container">
+    <h2 class="text-center fw-bold mb-4">Contact Me</h2>
+
+    <% if (status === 'success') { %>
+    <div class="row">
+      <div class="col-md-8 offset-md-2">
+        <div id="success-msg" class="alert alert-success" role="alert">
+          Your message has been sent successfully! Thank you for reaching out.
+        </div>
+      </div>
+    </div>
+    <% } %>
+
+    <div class="row">
+      <div class="col-md-8 offset-md-2">
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <form action="/contact" method="POST" novalidate class="needs-validation">
+              <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  name="name"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  name="email"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea
+                  class="form-control"
+                  id="message"
+                  name="message"
+                  rows="4"
+                  required
+                ></textarea>
+              </div>
+              <div
+                class="g-recaptcha"
+                data-site-key="6LfmU7wqAAAAAFlMZSjTYXb3WBpfioYzR9cuxR9d "
+              ></div>
+              <button type="submit" class="btn btn-primary">
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row text-center mt-5">
+      <div class="col-md-8 offset-md-2">
+        <h4>Connect with Me</h4>
+        <div class="d-flex justify-content-center">
+          <a
+            href="https://www.linkedin.com/in/onkar-rane-8841b72a7/"
+            target="_blank"
+            class="btn btn-outline-primary mx-2"
+            ><i class="bi bi-linkedin"></i> LinkedIn</a
+          >
+          <a
+            href="https://github.com/Onkar3107"
+            target="_blank"
+            class="btn btn-outline-dark mx-2"
+            ><i class="bi bi-github"></i> GitHub</a
+          >
+          <a
+            href="mailto:onkarrane60@gmail.com?subject=Inquiry&body=Hello%20Onkar"
+            class="btn btn-outline-danger mx-2"
+            ><i class="bi bi-envelope"></i> Email</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <div class="row mt-5">
+      <div class="col-md-8 offset-md-2">
+        <h4 class="text-center">Find Me Here</h4>
+        <div class="mapouter">
+          <div class="gmap_canvas">
+            <iframe
+              width="100%"
+              height="400"
+              id="gmap_canvas"
+              src="https://maps.google.com/maps?q=16.844666656933402, 74.5981544798534&z=13&ie=UTF8&iwloc=&output=embed"
+              frameborder="0"
+              scrolling="no"
+              marginheight="0"
+              marginwidth="0"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  const successMsg = document.getElementById("success-msg");
+  if (successMsg) {
+    setTimeout(() => {
+      successMsg.style.display = "none";
+    }, 4500);
+  }
+</script>
